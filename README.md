@@ -56,4 +56,4 @@ If the registration is successful, you should receive a JSON response with the m
 > So , the /login & /users/<username> also the same way to [Test]
 
 ## Epilogue
-> [ChatGPT] is a good tools to used to help anyone , you can use this tool to help you have many idea to reference .
+> [ChatGPT] is a good tools to used to help anyone , you can use this tool to help you have many idea to reference
