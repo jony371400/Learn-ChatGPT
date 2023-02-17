@@ -1,6 +1,6 @@
 # This Project is used [ChatGPT] to create a Login API Service
 
-## Step to [Create]
+## Step to [Create] Login API
 
 > Give GPT Cmd to execute
 ```
@@ -55,5 +55,16 @@ If the registration is successful, you should receive a JSON response with the m
 
 > So , the /login & /users/<username> also the same way to [Test]
 
+## Step to [Create] Login UI
+>
+```
+Ok and now create a login UI use react and have login button , register button , delete button to fetch login api
+```
+![Image](https://github.com/jony371400/Learn-ChatGPT/blob/main/Pic/uicmd.png)
+
 ## Epilogue
 > [ChatGPT] is a good tools to used to help anyone , you can use this tool to help you have many idea to reference
+
+```
+Start your Flask server and run your React application using the command npm start. You should now be able to see the login, registration, and deletion forms in your browser and use them to interact with your Flask API.
+```

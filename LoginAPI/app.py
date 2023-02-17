@@ -1,7 +1,9 @@
 from flask import Flask, jsonify, request
 import sqlite3
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 def get_db_connection():
     conn = sqlite3.connect('users.db')
@@ -33,6 +35,8 @@ def register():
     conn.commit()
     conn.close()
 
+    print("/register Success !")
+
     return jsonify({'message': 'Registration successful'}), 201
 
 @app.route('/login', methods=['POST'])
@@ -51,6 +55,8 @@ def login():
     if not user:
         return jsonify({'message': 'Incorrect login credentials'}), 401
 
+    print("/login Success !")
+
     return jsonify({'message': 'Login successful'}), 200
 
 @app.route('/users/<username>', methods=['DELETE'])
@@ -67,6 +73,8 @@ def delete_user(username):
     conn.commit()
     conn.close()
 
+    print("/delete Success !")
+    
     return jsonify({'message': 'User deleted successfully'}), 200
 
 if __name__ == '__main__':
